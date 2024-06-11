@@ -13,17 +13,17 @@ pnpm install
 Start the dev server:
 
 ```bash
-pnpm dev
+rsbuild dev
 ```
 
 Build the app for production:
 
 ```bash
-pnpm build
+rsbuild build
 ```
 
 Preview the production build locally:
 
 ```bash
-pnpm preview
+rsbuild preview
 ```
