@@ -5,7 +5,7 @@
 Install the dependencies:
 
 ```bash
-pnpm install
+rsbuild dev --open
 ```
 
 ## Get Started
