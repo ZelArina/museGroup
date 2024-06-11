@@ -1,12 +1,12 @@
 {
   "name": "muse_group",
-  "homepage": "https://muse_group.github.io/museGroup",
+  "homepage": "https://museGroup.github.io/muse_group",
   "private": true,
   "version": "1.0.0",
   "scripts": {
     "dev": "rsbuild dev --open",
     "predeploy": "npm run build", 
-    "deploy": "gh-pages -b master -d build",
+    "deploy": "gh-pages -d build",
     "build": "rsbuild build",
     "preview": "rsbuild preview",
     "start": "rsbuild dev"
