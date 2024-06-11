@@ -5,12 +5,6 @@
     gap: 10px;
 }
 
-.login{
-    width: 324px;
-    height: 45px;
-    padding: 0px;
-}
-
 .login input{
     width: 324px;
     height: 45px;
@@ -37,7 +31,6 @@
     justify-content: center;
     align-items: center;
     gap: 8px;
-    padding: 0px 24px;
 
     border-radius: 8px;
     border: none;
@@ -49,4 +42,23 @@
     line-height: 150%;
     letter-spacing: 0%;
     text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+    .enterForm{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;    
+        gap: 8px;
+    }
+    .login input{
+        width: 272px;
+        height: 45px;
+    }
+    .btn{
+        width: 272px;
+        height: 45px;
+    }
+
 }

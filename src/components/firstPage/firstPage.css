@@ -1,14 +1,13 @@
 .firstPage{
-    /* height: 1783px; */
     background: rgb(255, 255, 255);
-    padding: 32px 0px 32px 0px;
+    padding: 32px 0px;
 }
+
 .container{
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-   
 }
 
 header{
@@ -21,7 +20,6 @@ header{
 }
 
 main{
-    /* height: 1431px; */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,7 +27,6 @@ main{
     align-items: center;
 }
 .invite{
-    /* height: 641px; */
     width: 100%;
     display: flex;
     justify-content: center;
@@ -45,7 +42,7 @@ main{
 }
 
 .invite-wrapper h1{
-    width: 640px;
+    max-width: 640px;
     height: 34px;
     padding: 0px 140px 0px 5px;
     color: rgb(37, 35, 35);
@@ -68,7 +65,7 @@ main{
     text-align: center;
 }
 #first{
-    width: 640px;
+    max-width: 640px;
     height: 72px;
 }
 
@@ -78,14 +75,13 @@ main{
     border-radius: 8px;
 }
 #second{
-    width: 640px;
+    max-width: 640px;
     height: 21px;
     font-size: 14px;
 }
 
 .products{
-    width: 100%;
-    /* height: 34px; */
+    max-width: 100%;
     padding: 32px 24px 40px 32px;   
 }
 
@@ -98,7 +94,7 @@ main{
 
 .products-wrapper h2{
     height: 34px;
-    width: 700px;
+    max-width: 700px;
     margin-bottom: 32px;
     color: rgb(37, 35, 35);
     font-size: 26px;
@@ -109,8 +105,7 @@ main{
 }
 
 .item-wrapper{
-    /* width: 640px; */
-    /* height: 692px; */
+    max-width: 640px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -119,13 +114,10 @@ main{
 }
 
 .item{
-    width: 314px;
-    height: 340px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-
 }
 
 .box{
@@ -161,7 +153,6 @@ main{
 }
 
 .info h3{
-    width: 282px;
     height: 23px;
     margin-bottom: 8px;
     color: rgb(37, 35, 35);
@@ -173,7 +164,6 @@ main{
 }
 
 .info >p{
-    width: 282px;
     height: 72px;
     margin-bottom: 13px;
     color: rgb(75, 75, 75);
@@ -214,8 +204,6 @@ main{
 }
 
 footer{
-    width: 640px;
-    height: 216px;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -226,23 +214,24 @@ footer{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    padding: 32px 24px 0px 24px;
+    gap: 32px;   
 }
-
+.wrapper{
+    max-width: 640px;
+    height: 132px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 24px;
+    padding: 0px 24px;
+}
 .media{
-    /* width: 592px; */
     height: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 60px;
-}
-
-.footer-text{
-    width: 592px;
-    height: 84px;
-    margin: 24px 0px 32px 0px;
-    
 }
 
 .footer-text >p{
@@ -256,7 +245,7 @@ footer{
 }
 
 .services{
-    /* width: 640px; */
+    max-width: 640px;
     height: 20px;
     display: flex;
     justify-content: center;
@@ -269,4 +258,99 @@ footer{
     line-height: 150%;
     letter-spacing: 0%;
     text-align: center;
+}
+@media screen and (max-width: 700px) and (min-width: 480px){
+    .firstPage{
+        padding: 24px 0px;
+    }
+    header{
+        margin-bottom: 24px;
+    }
+    .invite{
+        padding: 24px;
+    }
+    .invite-wrapper h1{
+        padding: 0px;
+    }
+    #first{
+        padding: 0px;
+        font-size: 14px; 
+    }
+    .invite-wrapper img{
+        width: 90%;
+        height: 90%;
+    }
+    #second{
+        padding: 0px;
+    }
+    .footer-text >p{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .firstPage{
+        padding: 24px 0px;
+    }
+    header{
+        margin-bottom: 24px;
+    }
+    .invite{
+        padding: 24px;
+    }
+    .invite-wrapper h1{
+        width: 272px;
+        height: 58px;
+        font-size: 22px;
+        padding: 0px;
+    }
+    #first{
+        padding: 0px;
+        width: 272px;
+        height: 126px;
+        font-size: 14px;
+    }
+    .invite-wrapper img{
+        width: 272px;
+        height: 206px;
+    }
+    #second{
+        padding: 0px;
+        width: 272px;
+        height: 42px;
+    }
+    .products{
+        padding: 24px;
+    }
+    .products-wrapper h2{
+        width: 272px;
+        height: 29px;
+        margin-bottom: 16px;
+        font-size: 22px;
+    }
+    .item-wrapper{
+        gap: 16px;
+    }
+    .box{
+       width: 271px; 
+    }
+    .info{
+        width: 271px;
+    }
+    .footer-wrapper{
+        gap: 24px;
+    }
+    .wrapper{
+        width: 320px;
+        height: 216px;
+    }
+    .media{
+        gap: 40px;
+    }
+    .footer-text >p{
+        padding: 0px;
+    }
+    .services{
+        font-size: 11px;
+    }
 }
