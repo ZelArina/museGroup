@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [pluginReact()],
 
   html: {
-    template: './public/index.html',
+    template: 'index.html',
   },
 });
