@@ -20,9 +20,11 @@ const Enter = () => {
     if(emailError){
       alert('Email is invalid');
       setEmail('');
+      setEmailError(!emailError);
     }else {
       alert('Welcome to the team!');
       setEmail('');
+      setEmailError(!emailError);
     }
   }
 

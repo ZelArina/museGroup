@@ -16,7 +16,7 @@ input:-webkit-autofill {
   outline: 0;
   outline-offset: 0;
 }
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 0px;
   height: 0px;
-} */
+}
